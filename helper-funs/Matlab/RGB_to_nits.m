@@ -44,7 +44,7 @@ end
 % get sRGB 
 sRGB = [];
 if ~isempty(CLUT)
-    sRGB = [CLUT(RGB(1), 1), CLUT(RGB(2), 2), CLUT(RGB(3), 3)];
+    sRGB = [CLUT(RGB(1) + 1, 1), CLUT(RGB(2) + 1, 2), CLUT(RGB(3) + 1, 3)];
 end
 
 % use taken luminance measurements and interpolate the values, so we end up
